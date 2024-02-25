@@ -1,7 +1,18 @@
-const NavBar = () => {
+import { FC } from 'react'
+import styles from './styles.module.scss'
+import { LeftOutlined } from '@ant-design/icons'
+interface Props {
+  title: string
+}
+
+
+const NavBar: FC<Props> = (props: Props) => {
+  const { title } = props;
   return (
-    <nav>
-      NavBar
+    <nav className={styles.navBar}>
+      <span className={styles.icon}><LeftOutlined /></span>
+
+      <span>{title}</span>
     </nav>
   )
 }

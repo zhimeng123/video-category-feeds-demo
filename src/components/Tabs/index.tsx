@@ -1,6 +1,8 @@
+import styles from './styles.module.scss'
+
 const Tabs = () => {
   return (
-    <div>
+    <div className={styles.tabs}>
       Tabs
     </div>
   )

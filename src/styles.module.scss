@@ -2,6 +2,20 @@
   background: #fb7299;
   color: white;
 
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(0);
+    transition: transform 250ms;
+
+    &.hidden {
+      transform: translateY(-56px);
+    }
+  }
+
+
   .line {
     position: fixed; // 固定
     width: 100%;
@@ -11,6 +25,10 @@
     background: red;
   }
 
+  .scrollView {
+    height: 100vh;
+    overflow: auto;
+  }
 
   h2 {
     margin-top: 200px;
