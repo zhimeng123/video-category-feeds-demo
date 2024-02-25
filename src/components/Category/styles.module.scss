@@ -1,0 +1,23 @@
+.category {
+  ul {
+    display: flex; // 横着
+    overflow: auto; // 滚动：自动
+    padding: 16px;
+
+    li {
+      margin-right: 16px;
+      list-style: none;
+
+      &:last-child {
+        margin-right: 0; // 最后一个视频右边距为0
+      }
+
+      video {
+        background: black;
+        height: 240px;
+        width: 136px;
+        border-radius: 6px;
+      }
+    }
+  }
+}
