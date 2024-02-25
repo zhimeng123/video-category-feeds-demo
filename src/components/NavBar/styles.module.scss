@@ -10,9 +10,8 @@
   background: #fb7299;
 
   .icon {
-    position: absolute;
+    position: fixed;
+    color: black;
     left: 16px;
-    top: 50%;
-    transform: translateY(-50%);
   }
 }
